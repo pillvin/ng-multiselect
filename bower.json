@@ -1,5 +1,5 @@
 {
-  "name": "ng-multiselect",
+  "name": "ng-multiple-select",
   "homepage": "https://github.com/pillvin/ng-multiselect",
   "description": "A simple dual multiselect directive with filtering. Uses Angular and Bootstrap.",
   "main": [
