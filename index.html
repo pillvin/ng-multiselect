@@ -1,0 +1,41 @@
+<html ng-app="demo">
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <div style="display:block" ng-controller="MainController">
+    <select >
+        <option value="a">Apple</option>
+        <option value="b">Mango</option>
+    </select>
+    <select options="demoOptions" multiple="true">
+<!--        <option value="a">Apple</option>
+        <option value="b">Mango</option> -->
+    </select>
+    Value:{{demoOptions.selectedItems}}
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="ng-multiselect.js"></script>
+    <script>
+    (function(){
+        var app = angular.module('demo', ['ng-multiselect']);
+        
+        app.controller('MainController', ['$scope', function($scope){
+            console.log('Controller loaded...');
+             $scope.demoOptions = {
+//			  	title: '',
+//				helpMessage: ' Click items to transfer them between fields.',
+				disableFilter : true,
+//				filterPlaceHolder: 'Start typing to filter the lists below.',
+				labelAll: 'All Items',
+				labelSelected: 'Selected Items',
+
+				orderProperty: 'name',
+				items: [{'id': '50', 'name': 'Germany', extra:'abc'}, {'id': '45', 'name': 'Spain'}, {'id': '66', 'name': 'Italy'}, {'id': '30', 'name' : 'Brazil' }, {'id': '41', 'name': 'France' }, {'id': '34', 'name': 'Argentina'}],
+				selectedItems: [] 
+            };
+        }]);
+    })();
+    </script>
+  </body>
+</html>
