@@ -4,14 +4,8 @@
   </head>
   <body>
     <div style="display:block" ng-controller="MainController">
-    <select >
-        <option value="a">Apple</option>
-        <option value="b">Mango</option>
-    </select>
-    <select options="demoOptions" multiple="true">
-<!--        <option value="a">Apple</option>
-        <option value="b">Mango</option> -->
-    </select>
+    <multiselect options="demoOptions">
+    </multiselect>
     Value:{{demoOptions.selectedItems}}
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>

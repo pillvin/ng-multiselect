@@ -1,7 +1,7 @@
 (function() {
 
 var app = angular.module('ng-multiselect',[]);
-app.directive('select' , ['$compile',function($compile) {
+app.directive('multiselect' , ['$compile',function($compile) {
 	return {
 		restrict: 'E',
         replace: true,
@@ -10,9 +10,6 @@ app.directive('select' , ['$compile',function($compile) {
             options: '='
 		},
         link:  function ($scope, elm, attrs) {
-            if(!attrs.multiple) {
-                return;
-            }
             
             $scope.transfer = $scope.transfer || function(from, to, index) {
                     if (index >= 0) {
