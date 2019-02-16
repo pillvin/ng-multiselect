@@ -1,0 +1,22 @@
+{
+  "name": "ng-multiselect",
+  "version": "1.0.0",
+  "description": "multiselect for angular",
+  "main": "ng-multiselect.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pillvin/ng-multiselect.git"
+  },
+  "keywords": [
+    "multiselect"
+  ],
+  "author": "Vinod Pillai pillvin@iit.edu",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/pillvin/ng-multiselect/issues"
+  },
+  "homepage": "https://github.com/pillvin/ng-multiselect#readme"
+}
